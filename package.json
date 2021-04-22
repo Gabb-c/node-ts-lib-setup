@@ -12,7 +12,7 @@
     "lint:fix": "eslint src --ext js,ts,tsx --fix",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "test": "jest"
+    "test": "jest --passWithNoTests"
   },
   "keywords": [],
   "author": "",
@@ -29,7 +29,7 @@
     "@typescript-eslint/parser": "^4.22.0",
     "babel-plugin-module-resolver": "^4.1.0",
     "eslint": "^7.24.0",
-    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.22.1",
     "jest": "^26.6.3",
     "ts-jest": "^26.5.5",

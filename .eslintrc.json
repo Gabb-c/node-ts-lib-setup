@@ -5,7 +5,7 @@
     "jest": true
   },
   "extends": [
-    "airbnb",
+    "airbnb-base",
     "plugin:@typescript-eslint/recommended"
   ],
   "parser": "@typescript-eslint/parser",
@@ -24,25 +24,8 @@
       "error",
       {
         "devDependencies": [
-          "**/*.test.js",
-          "**/*.test.jsx",
-          "**/*.test.ts",
-          "**/*.test.tsx",
-          "**/*.spec.js",
-          "**/*.spec.jsx",
-          "**/*.spec.ts",
-          "**/*.spec.tsx"
-        ]
-      }
-    ],
-    "react/prop-types": "off",
-    "react/jsx-props-no-spreading": "off",
-    "react/jsx-filename-extension": [
-      1,
-      {
-        "extensions": [
-          ".js",
-          ".ts"
+          "**/__tests__/**/*.[jt]s?(x)",
+          "**/?(*.)+(spec|test).[tj]s?(x)"
         ]
       }
     ]
