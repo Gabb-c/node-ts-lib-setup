@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "babel src --extensions \".js, .ts\" --out-dir dist --copy-files --no-copy-ignored",
+    "build": "babel src --extensions .js,.ts --out-dir dist --copy-files --no-copy-ignored",
     "start": "node dist/server.js",
     "test": "jest",
     "dev": "ts-node-dev -r --respawn --transpile-only --ignore-watch node_modules src/server.ts"
@@ -13,8 +13,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@babel/cli": "^7.13.14",
-    "@babel/core": "^7.13.15",
+    "@babel/cli": "^7.13.16",
+    "@babel/core": "^7.13.16",
     "@babel/node": "^7.13.13",
     "@babel/preset-env": "^7.13.15",
     "@babel/preset-typescript": "^7.13.0",
@@ -24,7 +24,7 @@
     "@typescript-eslint/parser": "^4.22.0",
     "babel-plugin-module-resolver": "^4.1.0",
     "eslint": "^7.24.0",
-    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-airbnb": "^18.2.1",
     "eslint-plugin-import": "^2.22.1",
     "jest": "^26.6.3",
     "ts-jest": "^26.5.5",

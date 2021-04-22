@@ -18,6 +18,7 @@ module.exports = {
     }],
   ],
   ignore: [
-    '**/*.spec.ts'
+    '**/__tests__/**/*.[jt]s?(x)',
+    '**/?(*.)+(spec|test).[tj]s?(x)',
   ]
 };

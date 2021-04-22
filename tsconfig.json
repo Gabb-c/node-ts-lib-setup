@@ -1,5 +1,9 @@
 {
   "compilerOptions": {
+    "target": "ES6",
+    "lib": [
+      "ES6"
+    ],
     "module": "CommonJS",
     "allowJs": true,
     "outDir": "./dist",
@@ -13,6 +17,7 @@
     ],
     "esModuleInterop": true,
     "resolveJsonModule": true,
+    "isolatedModules": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "skipLibCheck": true,
@@ -20,5 +25,10 @@
   },
   "include": [
     "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/__tests__/**/*.[jt]s?(x)",
+    "**/?(*.)+(spec|test).[tj]s?(x)",
   ]
 }

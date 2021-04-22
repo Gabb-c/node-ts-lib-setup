@@ -1,21 +1,16 @@
-/*
- * For a detailed explanation regarding each configuration property and type check, visit:
- * https://jestjs.io/docs/en/configuration.html
- */
-
 export default {
-    clearMocks: true,
-    preset: 'ts-jest',
-    testEnvironment: 'node',
-    collectCoverageFrom: [
-        '**/*.{ts}',
-        '!**/*.d.ts', //  Exclude all type declaration files
-        '!**/node_modules/**', //  Exclude all files in node_modules
-        '!**/.dist/**', //  Exclude all files in the .next folder
-    ],
-    testMatch: [
-        '**/__tests__/**/*.[jt]s?(x)',
-        '**/?(*.)+(spec|test).[tj]s?(x)',
-    ],
-    testPathIgnorePatterns: ['/node_modules/', '/.dist/'],
+  clearMocks: true,
+  preset: 'ts-jest',
+  testEnvironment: 'node',
+  collectCoverageFrom: [
+    '**/*.{ts}',
+    '!**/*.d.ts', //  Exclude all type declaration files
+    '!**/node_modules/**', //  Exclude all files in node_modules
+    '!**/dist/**', //  Exclude all files in the .next folder
+  ],
+  testMatch: [
+    '**/__tests__/**/*.[jt]s?(x)',
+    '**/?(*.)+(spec|test).[tj]s?(x)',
+  ],
+  testPathIgnorePatterns: ['/node_modules/', '/dist/'],
 };
