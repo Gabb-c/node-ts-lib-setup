@@ -5,6 +5,7 @@
     "outDir": "./dist",
     "rootDir": "./src",
     "removeComments": true,
+    "noEmit": true,
     "strict": false,
     "typeRoots": [
       "./node_modules/@types",
