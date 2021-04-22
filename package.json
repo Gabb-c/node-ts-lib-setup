@@ -5,9 +5,14 @@
   "main": "index.js",
   "scripts": {
     "build": "babel src --extensions .js,.ts --out-dir dist --copy-files --no-copy-ignored",
+    "dev": "ts-node-dev -r --respawn --transpile-only --ignore-watch node_modules src/server.ts",
     "start": "node dist/server.js",
-    "test": "jest",
-    "dev": "ts-node-dev -r --respawn --transpile-only --ignore-watch node_modules src/server.ts"
+    "tsc": "tsc --skipLibCheck",
+    "lint": "eslint src --ext js,ts,tsx",
+    "lint:fix": "eslint src --ext js,ts,tsx --fix",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
