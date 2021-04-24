@@ -8,9 +8,6 @@ export default {
     '!**/node_modules/**', //  Exclude all files in node_modules
     '!**/dist/**', //  Exclude all files in the .next folder
   ],
-  testMatch: [
-    '**/__tests__/**/*.[jt]s?(x)',
-    '**/?(*.)+(spec|test).[tj]s?(x)',
-  ],
+  testMatch: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[tj]s?(x)'],
   testPathIgnorePatterns: ['/node_modules/', '/dist/'],
 };
