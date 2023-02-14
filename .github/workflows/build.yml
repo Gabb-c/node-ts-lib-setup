@@ -13,7 +13,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [lts, latest]
+        node-version: [lts/gallium, latest]
 
     steps:
       - name: Checkout Repository
