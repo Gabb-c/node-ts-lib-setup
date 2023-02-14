@@ -29,6 +29,8 @@
     "@swc/core": "^1.3.35",
     "@typescript-eslint/eslint-plugin": "^5.52.0",
     "@typescript-eslint/parser": "^5.52.0",
+    "@vitest/coverage-c8": "^0.28.5",
+    "@vitest/ui": "^0.28.5",
     "ci-info": "^3.8.0",
     "eslint": "^8.34.0",
     "eslint-config-node": "^4.1.0",
@@ -40,6 +42,7 @@
     "lint-staged": "^13.1.2",
     "prettier": "^2.8.4",
     "tsup": "^6.6.3",
-    "typescript": "^4.9.5"
+    "typescript": "^4.9.5",
+    "vitest": "^0.28.5"
   }
 }
