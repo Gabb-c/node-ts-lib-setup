@@ -1,34 +1,23 @@
 {
   "compilerOptions": {
-    "target": "ES6",
-    "lib": [
-      "ES6"
-    ],
-    "module": "CommonJS",
+    "target": "ESNext",
     "allowJs": true,
-    "outDir": "./dist",
-    "rootDir": "./src",
-    "removeComments": true,
+    "skipLibCheck": true,
+    "strict": true,
     "noEmit": true,
-    "strict": false,
-    "typeRoots": [
-      "./node_modules/@types",
-      "./src/@types"
-    ],
+    "noUncheckedIndexedAccess": true,
+    "forceConsistentCasingInFileNames": true,
+    "declaration": false,
     "esModuleInterop": true,
-    "resolveJsonModule": true,
-    "isolatedModules": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "rootDir": "./src",
+    "outDir": "./dist"
   },
-  "include": [
-    "src/**/*"
-  ],
-  "exclude": [
-    "node_modules",
-    "**/__tests__/**/*.[jt]s?(x)",
-    "**/?(*.)+(spec|test).[tj]s?(x)",
-  ]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
 }
